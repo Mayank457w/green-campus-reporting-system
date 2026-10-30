@@ -62,7 +62,7 @@ $("submit-btn").onclick = function () {
     id: Date.now(),
     category: $("category").value,
     location: location,
-    severity: $("severity").value,
+    severity: document.querySelector('input[name="severity"]:checked').value,
     description: description,
     photo: photoData,
     status: "Reported",

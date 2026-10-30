@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Green Campus Reporting System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,12 +35,12 @@
         <label for="location">Location</label>
         <input id="location" type="text" placeholder="e.g. Block 34, 2nd floor washroom">
 
-        <label for="severity">Severity</label>
-        <select id="severity">
-          <option>Low</option>
-          <option selected>Medium</option>
-          <option>High</option>
-        </select>
+        <label>Severity</label>
+        <div class="sev">
+          <label><input type="radio" name="severity" value="Low"><span>Low</span></label>
+          <label><input type="radio" name="severity" value="Medium" checked><span>Medium</span></label>
+          <label><input type="radio" name="severity" value="High"><span>High</span></label>
+        </div>
 
         <label for="description">What did you see?</label>
         <textarea id="description" placeholder="Tap running since morning"></textarea>
