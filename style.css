@@ -57,6 +57,7 @@ input, select, textarea {
   font-size: 1rem;
   background: var(--bg);
   color: var(--text);
+  font-family: inherit;
 }
 textarea { min-height: 80px; }
 
